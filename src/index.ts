@@ -1,5 +1,12 @@
-import { availableCategories } from "./availableCategories";
-import { productsByCategory } from "./productsByCategory";
+import { getAvailableCategories } from "./categoryRepository";
+import {
+  getProductsByCategory,
+  getFeaturedProducts,
+} from "./productRepository";
 
-console.log(availableCategories());
-console.log(productsByCategory(1));
+console.log("Featured Products:");
+console.log(getFeaturedProducts());
+console.log("Available Categories:");
+console.log(getAvailableCategories());
+console.log("Products By Category:");
+console.log(getProductsByCategory(1));

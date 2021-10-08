@@ -1,6 +1,6 @@
 import { categories } from "../data/categories.json";
 import { Category } from "./category";
 
-export const availableCategories = (): Array<Category> => {
+export const getAvailableCategories = (): Array<Category> => {
   return categories;
 };

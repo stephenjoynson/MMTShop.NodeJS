@@ -1,7 +1,7 @@
 ## MMTShop NodeJS & Typescript
 
-Install NodeJS
+- Install NodeJS
 
-yarn add typescript --dev
+- yarn add typescript --dev
 
-tsc
+- tsc

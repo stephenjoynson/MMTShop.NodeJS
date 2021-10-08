@@ -1,3 +1,3 @@
 export interface FeaturedProduct {
-  productSku: bigint;
+  productSku: number;
 }

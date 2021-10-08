@@ -1,7 +1,7 @@
 {
   "scripts": {
     "compile": "tsc",
-    "compile:watch": "onchange \"src/**/*.tsx\" -- npm run compile --silent"
+    "compile:watch": "onchange \"src/**/*.ts\" -- npm run compile --silent"
   },
   "devDependencies": {
     "@types/node": "^16.10.3",

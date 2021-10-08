@@ -1,7 +1,7 @@
 export interface Product {
-  sku: bigint;
+  sku: number;
   name: string;
   description: string;
   price: number;
-  categoryId: bigint;
+  categoryId: number;
 }

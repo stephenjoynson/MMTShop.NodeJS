@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "sku": 111111,
+      "name": "Kettle 2L",
+      "description": "Styleish Stainless Steel Kettle - 2 litres",
+      "price": 18.99
+    },
+    {
+      "sku": 222222,
+      "name": "Plant Pot 25CM",
+      "description": "25cm Brown Plastic Plant Pot",
+      "price": 4.99
+    },
+    {
+      "sku": 333333,
+      "name": "DAB Radio",
+      "description": "High Quality DAB Digital Radio by Roberts",
+      "price": 139.99
+    },
+    {
+      "sku": 333333,
+      "name": "DAB Radio",
+      "description": "High Quality DAB Digital Radio by Roberts",
+      "price": 139.99
+    }
+  ]
+}

@@ -9,5 +9,4 @@
 
 - yarn install
 - yarn compile
-- yarn express
-
+- yarn start

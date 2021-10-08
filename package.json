@@ -1,14 +1,17 @@
 {
+  "main": "dist/src/server.js",
   "scripts": {
     "compile": "tsc",
     "compile:watch": "onchange \"src/**/*.ts\" -- npm run compile --silent",
     "test": "jest",
-    "express": "node server.js"
+    "start": "node ."
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
     "@babel/preset-typescript": "^7.15.0",
+    "@types/babel__core": "^7.1.16",
+    "@types/express": "^4.17.13",
     "@types/jest": "^27.0.2",
     "@types/node": "^16.10.3",
     "babel-jest": "^27.2.4",

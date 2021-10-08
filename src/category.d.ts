@@ -1,4 +1,4 @@
-export interface Catgeory {
+export interface Category {
   categoryId: bigint;
   categoryName: string;
 }

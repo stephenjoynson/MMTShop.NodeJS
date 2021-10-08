@@ -3,6 +3,8 @@
     "target": "es5",
     "lib": ["es5"],
     "types": ["node"],
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "resolveJsonModule": true
   }
 }

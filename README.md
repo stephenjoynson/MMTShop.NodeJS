@@ -1,7 +1,7 @@
 ## MMTShop NodeJS & Typescript
 
-- Install NodeJS
+- Needs NodeJS
 
-- yarn add typescript --dev
+- yarn install
 
-- tsc
+- NPM scripts provided to Compile, Compile:Watch and Express

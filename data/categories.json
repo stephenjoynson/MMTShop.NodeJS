@@ -1,0 +1,24 @@
+{
+  "categories": [
+    {
+      "categoryId": 1,
+      "categoryName": "Home"
+    },
+    {
+      "categoryId": 2,
+      "categoryName": "Garden"
+    },
+    {
+      "categoryId": 3,
+      "categoryName": "Electronics"
+    },
+    {
+      "categoryId": 4,
+      "categoryName": "Fitness"
+    },
+    {
+      "categoryId": 5,
+      "categoryName": "Toys"
+    }
+  ]
+}

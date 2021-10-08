@@ -1,0 +1,13 @@
+{
+  "featuredProducts": [
+    {
+      "productSku": 111111
+    },
+    {
+      "productSku": 222222
+    },
+    {
+      "productSku": 333333
+    }
+  ]
+}

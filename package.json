@@ -1,5 +1,12 @@
 {
+  "scripts": {
+    "compile": "tsc",
+    "compile:watch": "onchange \"src/**/*.tsx\" -- npm run compile --silent"
+  },
   "devDependencies": {
     "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "onchange": "^7.1.0"
   }
 }

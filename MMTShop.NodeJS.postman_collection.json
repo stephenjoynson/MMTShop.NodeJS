@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "e9e5e28f-b8ae-4092-8a20-4c12f75c72cb",
+		"name": "MMTShop.NodeJS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/categories?api-key=foo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "api-key",
+							"value": "foo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products By Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/categories/1/products?api-key=foo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						"1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "api-key",
+							"value": "foo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Featured Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/featuredproducts?api-key=foo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"featuredproducts"
+					],
+					"query": [
+						{
+							"key": "api-key",
+							"value": "foo"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

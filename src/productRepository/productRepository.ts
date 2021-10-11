@@ -1,5 +1,5 @@
-import { products } from "../data/products.json";
-import { featuredProducts } from "../data/featuredproducts.json";
+import { products } from "../../data/products.json";
+import { featuredProducts } from "../../data/featuredproducts.json";
 import { Product } from "./product";
 
 export const getProductsByCategory = (categoryId: number): Array<Product> => {

@@ -1,5 +1,5 @@
 import { getAvailableCategories } from "./categoryRepository";
-import { categories } from "../data/categories.json";
+import { categories } from "../../data/categories.json";
 
 const availableCategories = getAvailableCategories();
 

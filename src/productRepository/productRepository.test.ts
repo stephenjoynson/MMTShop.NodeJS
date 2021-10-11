@@ -3,7 +3,7 @@ import {
   getFeaturedProducts,
   getProductsByCategory,
 } from "./productRepository";
-import { products } from "../data/products.json";
+import { products } from "../../data/products.json";
 
 const featuredProducts = getFeaturedProducts();
 const productsByCategory = getProductsByCategory(1);

@@ -9,7 +9,7 @@ import {
   getProductsByCategory,
 } from "../src/productRepository";
 
-var app = express();
+const app = express();
 
 // if we wanted to supply more than JSON, we could
 // use something similar to the content-negotiation
@@ -21,18 +21,18 @@ var app = express();
 // will cause this middleware to be invoked
 
 app.use("/api", function (req, res, next) {
-  var key = req.query["api-key"]?.toString();
+  const key = req.query["api-key"]?.toString();
 
   // key isn't present
   if (!key) {
-    var err = new Error("API Key Required");
+    const err = new Error("API Key Required");
     res.status(400);
     next(err);
   }
 
   // key is invalid
   if (!~apiKeys.indexOf(key)) {
-    var err = new Error("API Key Invalid");
+    const err = new Error("API Key Invalid");
     res.status(401);
     next(err);
   }
@@ -45,15 +45,15 @@ app.use("/api", function (req, res, next) {
 // api keys do _not_ serve as authentication, merely to
 // track API usage or help prevent malicious behavior etc.
 
-var apiKeys = ["foo", "bar", "baz"];
+const apiKeys = ["foo", "bar", "baz"];
 
 // these two objects will serve as our faux database
 
-var featuredProducts = getFeaturedProducts();
+const featuredProducts = getFeaturedProducts();
 
-var categories = getAvailableCategories();
+const categories = getAvailableCategories();
 
-var productsByCategory = (categoryId: number) => {
+const productsByCategory = (categoryId: number) => {
   return getProductsByCategory(categoryId);
 };
 
@@ -76,13 +76,13 @@ app.get(`${apipathversion}/featuredproducts`, function (req, res, next) {
 app.get(
   `${apipathversion}/categories/:categoryid/products`,
   function (req, res, next) {
-    var categoryid = parseInt(req.params.categoryid);
+    const categoryid = parseInt(req.params.categoryid);
     res.send(productsByCategory(categoryid));
   }
 );
 
 app.use(function (req, res, next) {
-  var err = new Error("Not Found");
+  const err = new Error("Not Found");
   res.status(404);
   next(err);
 });

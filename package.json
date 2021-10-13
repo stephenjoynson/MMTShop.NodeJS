@@ -1,10 +1,12 @@
 {
   "main": "dist/src/server.js",
   "scripts": {
+    "clean": "rimraf dist",
     "compile": "tsc",
     "compile:watch": "onchange \"src/**/*.ts\" -- npm run compile --silent",
     "test": "jest",
-    "prestart": "npm run compile",
+    "build": "npm run clean && tsc -p tsconfig.build.json",
+    "prestart": "npm run build",
     "start": "node ."
   },
   "devDependencies": {
@@ -23,6 +25,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "onchange": "^7.1.0",
+    "rimraf": "^3.0.2",
     "ts-node": "^10.2.1"
   }
 }
